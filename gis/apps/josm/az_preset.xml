@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  author="Greg Morgan"
+  version="1.0_2014-08-03"
+  shortdescription="AZ Addresses"
+  description="Address Presets for AZ USA and other stuff that I use.">
+    <!-- Item chunks -->
+    <!-- Item chunks -->
+    <chunk id="surface">
+        <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground,sett" />
+    </chunk>
+    <chunk id="surface_smoothness">
+        <combo key="smoothness" text="Smoothness" values_searchable="true">
+            <list_entry value="excellent" short_description="Thin Rollers: rollerblade, skateboard" />
+            <list_entry value="good" short_description="Thin Wheels: racing bike" />
+            <list_entry value="intermediate" short_description="Wheels: city bike, wheelchair, scooter" />
+            <list_entry value="bad" short_description="Robust Wheels: trekking bike, car, rickshaw" />
+            <list_entry value="very_bad" short_description="High Clearance: light duty off-road vehicle" />
+            <list_entry value="horrible" short_description="Off-Road: heavy duty off-road vehicle" />
+            <list_entry value="very_horrible" short_description="Specialized off-road: tractor, ATV" />
+            <list_entry value="impassable" short_description="No wheeled vehicle" />
+        </combo>
+    </chunk>
+  <!--  Groups -->
+  <group name="AZ" icon="">
+        <item name="AZ Addresses" icon="images/presets/misc/housenumber.svg" type="node,way,closedway,relation" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:addr"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:addr"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:addr"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:addr"
+                  et.href="http://wiki.openstreetmap.org/wiki/Et:Key:addr"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:addr"
+                  hr.href="http://wiki.openstreetmap.org/wiki/Hr:Key:addr"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:addr"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:addr"
+                  nl.href="http://wiki.openstreetmap.org/wiki/NL:Key:addr"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:addr"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:addr"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:addr" />
+            <space />
+            <text key="addr:housenumber" text="House number" match="key" auto_increment="-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,+1,+2,+3,+4,+5,+6,+7,+8,+9,+10" />
+            <optional>
+                <text key="addr:street" text="Street name" use_last_as_default="force" match="key" />
+                <!-- auto_increment="-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,+1,+2,+3,+4,+5,+6,+7,+8,+9,+10" -->
+                <text key="addr:flats" text="Flat/Suite" use_last_as_default="force" match="key" />
+                <combo key="addr:city" text="City name" values="Aguila,Ajo,Alpine,Amado,Apache Junction,Arivaca,Arizona City,Arlington,Ash Fork,Avondale,Bagdad,Bapchule,Bellemont,Benson,Bisbee,Black Canyon City,Blue Gap,Blue,Bouse,Bowie,Buckeye,Bullhead City,Bylas,Cameron,Camp Verde,Carefree,Casa Grande,Cashion,Catalina,Cave Creek,Central,Chambers,Chandler Heights,Chandler,Chinle,Chino Valley,Chloride,Cibecue,Cibola,Clarkdale,Clay Springs,Claypool,Clifton,Cochise,Colorado City,Concho,Congress,Coolidge,Cornville,Cortaro,Cottonwood,Crown King,Dateland,Dennehotso,Dewey,Dolan Springs,Douglas,Dragoon,Duncan,Eagar,Eden,Ehrenberg,El Mirage,Elfrida,Elgin,Eloy,Flagstaff,Florence,Forest Lakes,Fort Apache,Fort Defiance,Fort Huachuca,Fort Mcdowell,Fort Mohave,Fort Thomas,Fountain Hills,Fredonia,Gadsden,Ganado,Gila Bend,Gilbert,Glendale,Globe,Golden Valley,Goodyear,Grand Canyon,Gray Mountain,Green Valley,Greer,Hackberry,Happy Jack,Hayden,Heber,Hereford,Higley,Holbrook,Hotevilla,Houck,Huachuca City,Hualapai,Humboldt,Indian Wells,Iron Springs,Jerome,Joseph City,Kaibito,Kayenta,Keams Canyon,Kearny,Kingman,Kingman,Kirkland,Kykotsmovi Village,Lake Havasu City,Lake Montezuma,Lakeside,Laveen,Leupp,Litchfield Park,Littlefield,Lukachukai,Luke Afb,Lukeville,Lupton,Mammoth,Many Farms,Marana,Marble Canyon,Maricopa,Mayer,McNeal,McNary,Meadview,Mesa,Miami,Mohave Valley,Morenci,Mormon Lake,Morristown,Mount Lemmon,Munds Park,Naco,Nazlini,New River,Nogales,North Rim,Nutrioso,Oatman,Oracle,Overgaard,Page,Palo Verde,Paradise Valley,Parker,Parks,Patagonia,Paulden,Payson,Peach Springs,Pearce,Peoria,Peridot,Phoenix,Picacho,Pima,Pine,Pinedale,Pinetop,Pinon,Pirtleville,Polacca,Pomerene,Poston,Prescott,Quartzsite,Queen Creek,Red Rock,Red Valley,Rillito,Rimrock,Rio Rico,Rio Verde,Rock Point,Roll,Roosevelt,Round Rock,Sacaton,Safford,Sahuarita,Saint David,Saint Johns,Saint Michaels,Salome,San Carlos,San Luis,San Manuel,San Simon,Sanders,Sasabe,Sawmill,Scottsdale,Second Mesa,Sedona,Seligman,Sells,Shonto,Show Low,Sierra Vista,Skull Valley,Snowflake,Solomon,Somerton,Sonoita,Springerville,Stanfield,Sun City West,Sun City,Sun Valley,Supai,Superior,Surprise,Tacna,Taylor,Teec Nos Pos,Tempe,Temple Bar Marina,Thatcher,Tolleson,Tombstone,Tonalea,Tonopah,Tonto Basin,Topawa,Topock,Tortilla Flat,Tsaile,Tuba City,Tubac,Tucson,Tumacacori,Vail,Valentine,Valley Farms,Vernon,Waddell,Wellton,Wenden,White Mountain Lake,Whiteriver,Wickenburg,Wikieup,Willcox,Williams,Willow Beach,Window Rock,Winkelman,Winslow,Wittmann,Woodruff,Yarnell,Young,Youngtown,Yucca,Yuma" default="Phoenix" use_last_as_default="force" match="key" values_searchable="true" />
+                <combo key="addr:state" text="State Code" values="AL,AK,AZ,AR,CA,CO,CT,DE,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VT,VA,WA,WV,WI,WY,DC,PR,VI,AS,GU,MP,AB,BC,MB,NB,NL,NS,ON,PE,QC,SK,NT,NU,YT" default="AZ" use_last_as_default="force" match="key" length="2" values_searchable="true" />
+                <combo key="addr:postcode" text="Post code" values="85001,85002,85003,85004,85005,85006,85007,85008,85009,85010,85011,85012,85013,85014,85015,85016,85017,85018,85019,85020,85021,85022,85023,85024,85025,85026,85027,85028,85029,85030,85031,85032,85033,85034,85035,85036,85037,85038,85039,85040,85041,85042,85043,85044,85045,85046,85048,85050,85051,85053,85054,85055,85060,85061,85062,85063,85064,85065,85066,85067,85068,85069,85070,85071,85072,85073,85074,85075,85076,85077,85078,85079,85080,85082,85085,85086,85087,85098,85099,85201,85202,85203,85204,85205,85206,85207,85208,85210,85211,85212,85213,85214,85215,85216,85217,85218,85219,85220,85221,85222,85223,85224,85225,85226,85227,85228,85230,85231,85232,85233,85234,85235,85236,85237,85239,85241,85242,85244,85245,85246,85247,85248,85249,85250,85251,85252,85253,85254,85255,85256,85257,85258,85259,85260,85261,85262,85263,85264,85266,85267,85268,85269,85271,85272,85273,85274,85275,85277,85278,85279,85280,85281,85282,85283,85284,85285,85287,85289,85290,85291,85292,85296,85297,85299,85301,85302,85303,85304,85305,85306,85307,85308,85309,85310,85311,85312,85313,85318,85320,85321,85322,85323,85324,85325,85326,85327,85328,85329,85331,85332,85333,85334,85335,85336,85337,85338,85339,85340,85341,85342,85343,85344,85345,85346,85347,85348,85349,85350,85351,85352,85353,85354,85355,85356,85357,85358,85359,85360,85361,85362,85363,85364,85365,85366,85367,85369,85371,85372,85373,85374,85375,85376,85377,85378,85379,85380,85381,85382,85383,85385,85387,85390,85501,85502,85530,85531,85532,85533,85534,85535,85536,85539,85540,85541,85542,85543,85544,85545,85546,85547,85548,85550,85551,85552,85553,85554,85601,85602,85603,85605,85606,85607,85608,85609,85610,85611,85613,85614,85615,85616,85617,85618,85619,85620,85621,85622,85623,85624,85625,85626,85627,85628,85629,85630,85631,85632,85633,85634,85635,85636,85637,85638,85639,85640,85641,85643,85644,85645,85646,85648,85650,85652,85653,85654,85655,85662,85670,85671,85701,85702,85703,85704,85705,85706,85707,85708,85709,85710,85711,85712,85713,85714,85715,85716,85717,85718,85719,85720,85721,85722,85723,85724,85725,85726,85728,85730,85731,85732,85733,85734,85735,85736,85737,85738,85739,85740,85741,85742,85743,85744,85745,85746,85747,85748,85749,85750,85751,85752,85754,85775,85777,85901,85902,85911,85912,85920,85922,85923,85924,85925,85926,85927,85928,85929,85930,85931,85932,85933,85934,85935,85936,85937,85938,85939,85940,85941,85942,86001,86002,86003,86004,86011,86015,86016,86017,86018,86020,86021,86022,86023,86024,86025,86028,86029,86030,86031,86032,86033,86034,86035,86036,86038,86039,86040,86042,86043,86044,86045,86046,86047,86052,86053,86054,86301,86302,86303,86304,86305,86312,86313,86314,86320,86321,86322,86323,86324,86325,86326,86327,86329,86330,86331,86332,86333,86334,86335,86336,86337,86338,86339,86340,86341,86342,86343,86351,86401,86402,86403,86404,86405,86406,86411,86412,86413,86426,86427,86429,86430,86431,86432,86433,86434,86435,86436,86437,86438,86439,86440,86441,86442,86443,86444,86445,86446,86502,86503,86504,86505,86506,86507,86508,86510,86511,86512,86514,86515,86520,86535,86538,86540,86544,86545,86547,86549,86556" use_last_as_default="force" match="key" values_searchable="true" />
+                <combo key="building" text="Building" values="yes,roof,garage,garages,industrial,school,hangar,commercial,barn,farm_auxiliary,transportation,greenhouse,office,university,hospital,warehouse,retail,shed,storage_tank,cowshed,construction" values_context="building" default="yes" match="keyvalue!" values_searchable="true" />
+                <combo key="addr:country" text="Country code" values_from="java.util.Locale#getISOCountries" use_last_as_default="force" match="key" default="US" />
+                <text key="addr:housename" text="House name" match="key" />
+            </optional>
+    </item>
+    <item name="brdg-1" icon="images/presets/transport/bridge/bridge.svg" type="way,closedway">
+      <key key="layer" value="1" />
+      <key key="bridge" value="yes" />
+    </item>
+    <item name="Lns-2-AST" icon="images/icons/manmade_tower.png" type="way,closedway">
+      <key key="lanes" value="2" />
+      <key key="oneway" value="no" />
+      <key key="smoothness" value="good" /> 
+      <!-- <reference ref="surface_smoothness" default="good"/> -->
+      <!-- <combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" default="good" use_last_as_default="force" match="key" values_searchable="true" /> -->
+      <key key="surface" value="asphalt" />
+    </item>
+    <item name="Lns-2-DRT" icon="images/icons/manmade_tower.png" type="way,closedway">
+      <key key="lanes" value="2" />
+      <key key="oneway" value="no" />
+      <key key="smoothness" value="intermediate" /> 
+      <!-- <reference ref="surface_smoothness" default="good"/> -->
+      <!-- <combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" default="good" use_last_as_default="force" match="key" values_searchable="true" /> -->
+      <key key="surface" value="dirt" />
+    </item>
+    <item name="Lanes-oneway-1" icon="images/icons/manmade_tower.png" type="way,closedway">
+      <key key="lanes" value="1" />
+      <key key="oneway" value="yes" />
+      <key key="smoothness" value="good" /> 
+      <!-- <reference ref="surface_smoothness" default="good"/> -->
+      <!-- <combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" default="good" use_last_as_default="force" match="key" values_searchable="true" /> -->
+      <key key="surface" value="asphalt" />
+    </item>
+    <item name="Residential-2" icon="images/icons/manmade_tower.png" type="way,closedway">
+      <key key="highway" value="residential" />
+      <key key="lanes" value="2" />
+      <key key="oneway" value="no" />
+      <key key="smoothness" value="good" /> 
+      <!-- <reference ref="surface_smoothness" default="good"/> -->
+      <!-- <combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" default="good" use_last_as_default="force" match="key" values_searchable="true" /> -->
+      <key key="surface" value="asphalt" />
+    </item>
+    <item name="Residential-1" icon="images/icons/manmade_tower.png" type="way,closedway">
+      <key key="highway" value="residential" />
+      <key key="lanes" value="1" />
+      <key key="oneway" value="no" />
+      <key key="surface" value="asphalt" />
+      <key key="smoothness" value="good" /> 
+      <!-- <reference ref="surface_smoothness" default="good"/> -->
+      <!-- <combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" default="good" use_last_as_default="force" match="key" values_searchable="true" /> -->
+    </item>
+    <item name="Parking" icon="presets/vehicle/parking/parking.svg" type="way,closedway">
+      <key key="highway" value="service" />
+      <key key="lanes" value="2" />
+      <key key="oneway" value="no" />
+      <key key="service" value="parking_aisle" />
+      <key key="smoothness" value="good" /> 
+      <!-- <reference ref="surface_smoothness" default="good"/> -->
+      <!-- <combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" default="good" use_last_as_default="force" match="key" values_searchable="true" /> -->
+      <key key="surface" value="asphalt" />
+    </item>
+    <item name="Search Parking oneway missing surface" icon="presets/vehicle/parking/parking.svg" type="way,closedway">
+      <key key="highway" value="service" />
+      <key key="oneway" value="yes" />
+      <key key="service" value="parking_aisle" />
+      <key key="smoothness" value="good" /> 
+      <!-- <reference ref="surface_smoothness" default="good"/> -->
+      <!-- <combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" default="good" use_last_as_default="force" match="key" values_searchable="true" /> -->
+      <key key="surface" value="asphalt" />
+    </item>
+    <item name="Search Parking oneway=yes missing lane" icon="presets/vehicle/parking/parking.svg" type="way,closedway">
+      <key key="highway" value="service" />
+      <key key="oneway" value="yes" />
+      <key key="service" value="parking_aisle" />
+      <key key="smoothness" value="good" /> 
+      <!-- <reference ref="surface_smoothness" default="good"/> -->
+      <!-- <combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" default="good" use_last_as_default="force" match="key" values_searchable="true" /> -->
+      <key key="surface" value="asphalt" />
+    </item>
+    <item name="Search Parking oneway=no missing lane" icon="presets/vehicle/parking/parking.svg" type="way,closedway">
+      <key key="highway" value="service" />
+      <key key="oneway" value="no" />
+      <key key="service" value="parking_aisle" />
+      <key key="smoothness" value="good" /> 
+      <!-- <reference ref="surface_smoothness" default="good"/> -->
+      <!-- <combo key="smoothness" text="Smoothness" values="excellent,good,intermediate,bad,very_bad,horrible,very_horrible,impassable" default="good" use_last_as_default="force" match="key" values_searchable="true" /> -->
+      <key key="surface" value="asphalt" />
+    </item>
+    <item name="Search Service missing Parking" icon="presets/vehicle/parking/parking.svg" type="way,closedway">
+      <key key="highway" value="service" />
+    </item>
+    <item name="Search Parking missing mine" icon="presets/vehicle/parking/parking.svg" type="way,closedway">
+      <key key="highway" value="service" />
+      <key key="service" value="parking_aisle" />
+    </item>
+    <!-- Defaults.  Override with regualr preset. -->
+    <item name="Pedestrian Crossing" icon="images/presets/vehicle/crossing.svg" type="node">
+        <key key="highway" value="crossing" />
+        <key key="bicycle" value="yes" />
+        <key key="crossing" value="traffic_signals" />
+        <key key="horse" value="yes" />
+        <key key="supervised" value="no" />
+    </item>
+    <item name="Railway Crossing" icon="images/presets/transport/railway/crossing.svg" type="node">
+        <key key="highway" value="crossing" />
+        <key key="bicycle" value="yes" />
+        <key key="crossing" value="traffic_signals" />
+        <key key="crossing:light" value="yes" />
+        <key key="horse" value="yes" />
+        <key key="railway" value="crossing" />
+        <key key="supervised" value="no" />
+    </item>
+    <item name="Is In" icon="images/presets/sightseeing/attraction.svg" type="node,way,closedway,relation" preset_name_label="true">
+      <key key="is_in" value="USA;AZ;Arizona;Maricopa;Phoenix" />
+      <key key="is_in:state" value="Arizona" />
+      <key key="is_in:state_code" value="AZ" />
+      <key key="is_in:county" value="Maricopa" />
+      <key key="is_in:city" value="Phoenix" />
+      <key key="is_in:municipality" value="City of Phoenix" />
+      <key key="is_in:country" value="United States of America" />
+      <key key="is_in:country_code" value="USA" />
+    </item>
+    <item name="Dero POI" type="node" preset_name_label="true">
+      <key key="amenity" value="bicycle_repair_station" />
+      <key key="brand" value="Dero" />
+      <key key="opening_hours" value="24/7" />
+      <key key="operator" value="Arizona State University" />
+      <key key="note" value="https://wiki.openstreetmap.org/wiki/Import/Dero_Bike_Repair" />
+      <key key="ref" value="&lt;none&gt;" />
+      <key key="service:bicycle:chaintool" value="no" />
+      <key key="service:bicycle:charging" value="no" />
+      <key key="service:bicycle:pump" value="yes" />
+      <key key="service:bicycle:screwdriver" value="yes" />
+      <key key="source" value="osmsync:dero" />
+      <key key="source_alt" value="survey" />
+      <key key="website" value="http://www.dero.com/fixitmap/fixitmap.html" />
+    </item>
+    <item name="Cell Tower" icon="presets/landmark/tower.svg" type="node" preset_name_label="true">
+      <key key="communication:mobile_phone" value="yes" />
+      <key key="man_made" value="mast" />
+      <key key="tower:type" value="communication" />
+    </item>
+    <item name="Lamp Bent1" type="node" preset_name_label="true">
+      <key key="highway" value="street_lamp" />
+      <key key="lamp:count" value="1" />
+      <key key="lamp:light" value="electric" />
+      <key key="lamp:lit" value="dusk-dawn" />
+      <key key="lamp:shape" value="spherical" />
+      <key key="lamp:type" value="street_lamp" />
+      <key key="lamp_mount" value="bent_mast" />
+      <key key="lamp_type" value="electric" />
+      <key key="man_made" value="lamp" />
+      <key key="support" value="pole" />
+    </item>
+    <item name="Lamp Straight_mast1" type="node" preset_name_label="true">
+      <key key="highway" value="street_lamp" />
+      <key key="lamp:count" value="1" />
+      <key key="lamp:light" value="electric" />
+      <key key="lamp:lit" value="dusk-dawn" />
+      <key key="lamp:shape" value="spherical" />
+      <key key="lamp:type" value="street_lamp" />
+      <key key="lamp_mount" value="straight_mast" />
+      <key key="lamp_type" value="electric" />
+      <key key="man_made" value="lamp" />
+      <key key="support" value="pole" />
+    </item>
+    <item name="Bike Parking" type="node" preset_name_label="true">
+      <key key="access" value="public" />
+      <key key="amenity" value="bicycle_parking" />
+      <key key="bicycle_parking" value="stands" />
+      <key key="capacity" value="2" />
+      <key key="covered" value="no" />
+      <key key="smoothness" value="excellent" />
+      <key key="surface" value="concrete" />
+    </item>
+    <item name="fire hydrant " type="node" preset_name_label="true">
+      <key key="emergency" value="fire_hydrant" />
+      <key key="fire_hydrant:type" value="pillar" />
+    </item>
+    <item name="Substation Fence" type="way,closedway,relation" preset_name_label="true">
+      <key key="barrier" value="fence" />
+      <key key="location" value="outdoor" />
+      <key key="power" value="substation" />
+      <key key="substation" value="distribution" />
+    </item>
+    <item name="Substation Wall" type="way,closedway,relation" preset_name_label="true">
+      <key key="barrier" value="wall" />
+      <key key="location" value="outdoor" />
+      <key key="power" value="substation" />
+      <key key="substation" value="distribution" />
+    </item>
+    <item name="Wind Generator" icon="images/styles/standard/misc/information.png" type="node,way,closedway,relation">
+      <key key="generator:method" value="wind_turbine" />
+      <key key="generator:output:electricity" value="yes" />
+      <key key="generator:source" value="wind" />
+      <key key="generator:type" value="horizontal_axis" />
+      <key key="power" value="generator" />
+    </item>
+    <item name="Solar Thermal Generator" icon="presets/vehicle/parking/parking.svg" type="node,way,closedway,relation">
+      <key key="building" value="roof" />
+      <key key="generator:method" value="photovoltaic" />
+      <key key="generator:output:electricity" value="yes" />
+      <key key="generator:source" value="solar" />
+      <key key="generator:type" value="solar_photovoltaic_panel" />
+      <key key="power" value="generator" /> 
+    </item>
+    <item name="Mile post" icon="presets/vehicle/parking/parking.svg" type="node,way,closedway,relation">
+      <key key="distance" value="30 miles" />
+      <key key="highway" value="milestone" />
+      <key key="ref" value="30" />
+      <key key="traffic_sign" value="milestone" />
+    </item>
+    <item name="mph35" icon="presets/vehicle/parking/parking.svg" type="node">
+      <key key="maxspeed" value="35 mph" />
+      <key key="traffic_sign" value="maxspeed" />
+    </item>
+  </group>
+</presets>
