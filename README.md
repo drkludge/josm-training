@@ -1,4 +1,4 @@
-#JOSM Training
+# JOSM Training
 
 Yet another OpenStreetMap training seminar.
 
@@ -24,17 +24,3 @@ This JOSM workshop is just one of the many training options available.  Here is 
 * [JOSM Keyboard Shortcuts Cheat Sheet](https://wiki.openstreetmap.org/w/images/9/99/JOSM_Keyboard_shortcuts_cheat_sheet.png) [Florin Badita's](http://www.openstreetmap.org/user/baditaflorin/diary/37606) Telenav Learning Friday project.
 * [JOSM Software site](https://josm.openstreetmap.de/) provides the editor software but also has a helpful wiki JOSM resources.
 * [JOSM OpenStreetMap Wiki Page](https://wiki.openstreetmap.org/wiki/JOSM/Guide) provides helpful JOSM resources.
-
-## Josm Training
-
-### Starting At the Very Beginning
-
-[Why Do You Want To Edit](Why_Do_You_Want_To_Edit.md)
-
-### JOSM Training Index
-
-[JOSM Training Index](JOSM_Training_Index.md)
-
-### Procedure Index
-
-[Procedure Index](procedure_index.md)
